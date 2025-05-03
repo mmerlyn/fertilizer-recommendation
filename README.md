@@ -1,15 +1,23 @@
-# fertilizer_recommendation
+# 🌿 Fertilizer Recommendation System
 
-A tool that can detect nine nutrient deficiencies across three major crops in India and recommends fertilizer type and amount for farmers upon taking their additional input like age of the pant and not so seen symptoms
+A smart diagnostic tool to detect **nine nutrient deficiencies** across **three major crops** (rice, wheat, maize) in India. This tool uses **deep learning** to analyze leaf images and leverages additional farmer input to recommend the appropriate **fertilizer type and amount**, reducing costs and preventing overfertilization.
 
-#### CROPS FOCUSSED:
+## 🔍 Project Highlights
 
+- ✅ Achieved **88.24% final test accuracy** in identifying nutrient deficiency symptoms.
+- 📈 Expanded dataset from 100 to 400+ images using augmentation techniques.
+- 🧠 Developed CNN-based models trained on expert-labeled plant leaf images.
+- 🌾 Targets major crops in India with high nutritional variability.
+- 🧪 Integrates research-based rules from **Montana State University** and **USDA** for final recommendations.
+
+## 🧪 Crops & Nutrients Covered
+
+### 🌱 Crops
 - Rice
 - Wheat
 - Maize
 
-#### NUTRIENTS FOCUSSED:
-
+### 💊 Nutrients
 - Potassium
 - Magnesium
 - Zinc
@@ -18,28 +26,53 @@ A tool that can detect nine nutrient deficiencies across three major crops in In
 - Copper
 - Boron
 - Sulphur
-- Nitrogen deficiency levels - only for rice
+- **Nitrogen** (only for rice)
 
-### FLOW:
+## 🔁 Workflow
 
-- User can upload an image of the leaf (that begins to show some symptoms like loss of color(chlorosis), drying(necrosis)
-- The model runs on the image and classifies it into 1 of 5 symptoms (includes a healthy/normal class).
-- Uses user input on age of leaf (new/old/middle) and presence of 4 additional symptoms (not capture in leaf image), like stunted growth of entire plant.
-- Using this infomation and the research on identifying nutrient deficiencies (done by Montana State University, U.S. Department of Agriculture), the following rules are developed.
-- These results are further used to recommend appropriate fertilizers to the farmer, helping in **avoiding overfertilization** by adding standard fertilizers recommended to crop grown and **control costs**
+1. **User uploads a leaf image** showing early symptoms (e.g. chlorosis, necrosis).
+2. The image is classified into 1 of 5 classes:  
+   `['interveinal', 'margin', 'normal', 'spotty', 'tip']`.
+3. **User provides**:
+   - Leaf age (new / middle / old)
+   - Presence of 4 additional symptoms (not visible in image)
+4. A rule-based system maps symptoms to probable nutrient deficiencies.
+5. Based on deficiency and crop type, the system **recommends appropriate fertilizers**.
+6. Results are optimized to avoid overfertilization and reduce costs.
 
-### RESULTS
+## 📁 Project Files
 
-- Validation accuracy: 90%
-- FInal Test accuracy: 88.24%
+| File | Description |
+|------|-------------|
+| `fertilizer.xls` | Contains fertilizer information (2 sheets) used for recommendations. |
+| `first_app.py` | Main Streamlit web application for users. |
+| `200_epoch_97_87_soft.h5` | Trained CNN model to classify leaf images into 5 symptom classes. |
+| `plain2model.tflite` | TFLite model for Nitrogen detection using rice leaf color classification. |
+| `nn_model_basic.ipynb` | Jupyter notebook for CNN training. |
+| `SessionState.py` | Utility for session management in Streamlit. |
 
-- The project_report file contains a detailed description of the features of the project
 
-### FILES:
+## 📊 Results
 
-- fertilizer.xls - Excel file containing the data on fertilizers. It has 2 pages which needs to be updated with the info collected
-- first_app.py - The web application that is viewed by users
-- 200_epoch_97_87_soft.h5 - Neural network model for classifying leaf image into 1 of 5 classes ['interveinal', 'margin', 'normal', 'spotty', 'tip']
-- plain2model.tflite - Neural network model for classifying rice leaf image into 1 of 4 classes based on LCC
-- nn_model_basic.ipynb - Jupyter notebook containing code used to train the Neural Network model
-- SessionState.py - Library to allow use of session in application
+- **Validation Accuracy**: 90%
+- **Final Test Accuracy**: 88.24%
+
+Detailed analysis and performance metrics are available in the `project_report` file.
+
+
+## 📜 License
+
+© All rights reserved.  
+This project was completed as part of the Project-Based Learning (PBL) contest at **BMS Institute of Technology and Management**, Bengaluru, India.
+
+**Team Members:**
+1. Aishwarya M
+2. Merlyn Mercylona Maki Reddy
+3. Namrata Karki
+
+
+## 💬 Acknowledgments
+
+- Montana State University – Nutrient Deficiency Research
+- USDA – Plant Nutrition Guidelines
+
