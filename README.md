@@ -2,21 +2,21 @@
 
 A smart diagnostic tool to detect **nine nutrient deficiencies** across **three major crops** (rice, wheat, maize) in India. This tool uses **deep learning** to analyze leaf images and leverages additional farmer input to recommend the appropriate **fertilizer type and amount**, reducing costs and preventing overfertilization.
 
-## 📚 Publication
+## Publication
 
 The initial phase of this project was published in the *United International Journal for Research & Technology (UIJRT)*:
 
 🔗 [Read the paper](https://uijrt.com/paper/nitrogen-deficiency-detection-paddy-urea-fertilizer-management)
 
 
-## 🔍 Project Highlights
+## Highlights
 - 🌾 Targets major crops in India with high nutritional variability.
 - 📈 Expanded dataset from 100 to 400+ images using augmentation techniques.
 - 🧠 Developed CNN-based models trained on expert-labeled plant leaf images.
 - 🧪 Integrates research-based rules from **Montana State University** and **USDA** for fertilizer recommendations.
 - ✅ Achieved **88.24% final test accuracy** in identifying nutrient deficiency symptoms.
 
-## 🧪 Crops & Nutrients Covered
+## Crops & Nutrients Covered
 
 ### 🌱 Crops
 - Rice
@@ -34,7 +34,7 @@ The initial phase of this project was published in the *United International Jou
 - Sulphur
 - **Nitrogen** (only for rice)
 
-## 🔁 Workflow
+## Working
 
 1. **User uploads a leaf image** showing early symptoms (e.g. chlorosis, necrosis).
 2. The image is classified into 1 of 5 classes:  
@@ -69,7 +69,7 @@ Detailed analysis and performance metrics are available in the `project_report` 
 ## 📜 License
 
 © All rights reserved.  
-This project was completed as part of the Project-Based Learning (PBL) contest at **BMS Institute of Technology and Management**, Bengaluru, India.
+This project was undertaken in partial fulfillment of the requirements for the Bachelor of Engineering degree in Computer Science at BMS Institute of Technology and Management, Bengaluru, India.
 
 **Team Members:**
 1. Aishwarya M
@@ -77,8 +77,8 @@ This project was completed as part of the Project-Based Learning (PBL) contest a
 3. Namrata Karki
 
 
-## 💬 Acknowledgments
+## Acknowledgments
 
 - Montana State University – Nutrient Deficiency Research
-- USDA – Plant Nutrition Guidelines
+- US Department of Agriculture (USDA) – Plant Nutrition Guidelines
 
