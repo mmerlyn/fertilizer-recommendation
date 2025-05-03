@@ -2,13 +2,20 @@
 
 A smart diagnostic tool to detect **nine nutrient deficiencies** across **three major crops** (rice, wheat, maize) in India. This tool uses **deep learning** to analyze leaf images and leverages additional farmer input to recommend the appropriate **fertilizer type and amount**, reducing costs and preventing overfertilization.
 
-## 🔍 Project Highlights
+## 📚 Publication
 
-- ✅ Achieved **88.24% final test accuracy** in identifying nutrient deficiency symptoms.
+This project is published in the *United International Journal for Research & Technology (UIJRT)*:
+
+📄 **Nitrogen Deficiency Detection in Paddy for Urea Fertilizer Management**  
+🔗 [Read the paper](https://uijrt.com/paper/nitrogen-deficiency-detection-paddy-urea-fertilizer-management)
+
+
+## 🔍 Project Highlights
+- 🌾 Targets major crops in India with high nutritional variability.
 - 📈 Expanded dataset from 100 to 400+ images using augmentation techniques.
 - 🧠 Developed CNN-based models trained on expert-labeled plant leaf images.
-- 🌾 Targets major crops in India with high nutritional variability.
-- 🧪 Integrates research-based rules from **Montana State University** and **USDA** for final recommendations.
+- 🧪 Integrates research-based rules from **Montana State University** and **USDA** for fertilizer recommendations.
+- ✅ Achieved **88.24% final test accuracy** in identifying nutrient deficiency symptoms.
 
 ## 🧪 Crops & Nutrients Covered
 
