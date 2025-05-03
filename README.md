@@ -6,7 +6,6 @@ A smart diagnostic tool to detect **nine nutrient deficiencies** across **three 
 
 This project is published in the *United International Journal for Research & Technology (UIJRT)*:
 
-📄 **Nitrogen Deficiency Detection in Paddy for Urea Fertilizer Management**  
 🔗 [Read the paper](https://uijrt.com/paper/nitrogen-deficiency-detection-paddy-urea-fertilizer-management)
 
 
